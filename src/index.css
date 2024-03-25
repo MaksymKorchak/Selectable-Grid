@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  margin: 10px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), 35px);
+  grid-template-rows: repeat(var(--rows, 10), 35px);
+  gap: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.box {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box.selected {
+  background-color: lightblue;
+  color: teal;
+  font-weight: bold;
+}
